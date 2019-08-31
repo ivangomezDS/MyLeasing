@@ -19,6 +19,9 @@ namespace MyLeasing.Web.Helpers
         Task<SignInResult> LoginAsync(LoginViewModel model);
 
         Task LogoutAsync();
+        Task<bool> DeleteUserAsync(string email);
+
+        Task<IdentityResult> UpdateUserAsync(User user);
 
 
 
